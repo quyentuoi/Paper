@@ -1,0 +1,166 @@
+<topology linkdefault="undirected">
+  <property name="delay_unit" type="string">ms</property>
+  <property name="capacity_unit" type="string">Gbps</property>
+  <property name="buffer_unit" type="string">bytes</property>
+  <property name="type" type="string">dumbbell</property>
+  <property name="name" type="string">dumbbell_topology(5,4)</property>
+  <node id="0" id.type="int">
+    <property name="type" type="string">left_bell</property>
+  </node>
+  <node id="1" id.type="int">
+    <property name="type" type="string">left_bell</property>
+  </node>
+  <node id="2" id.type="int">
+    <property name="type" type="string">left_bell</property>
+  </node>
+  <node id="3" id.type="int">
+    <property name="type" type="string">left_bell</property>
+  </node>
+  <node id="4" id.type="int">
+    <property name="type" type="string">left_bell</property>
+  </node>
+  <node id="5" id.type="int">
+    <property name="type" type="string">core</property>
+  </node>
+  <node id="6" id.type="int">
+    <property name="type" type="string">core</property>
+  </node>
+  <node id="7" id.type="int">
+    <property name="type" type="string">core</property>
+  </node>
+  <node id="8" id.type="int">
+    <property name="type" type="string">core</property>
+  </node>
+  <node id="9" id.type="int">
+    <property name="type" type="string">right_bell</property>
+  </node>
+  <node id="10" id.type="int">
+    <property name="type" type="string">right_bell</property>
+  </node>
+  <node id="11" id.type="int">
+    <property name="type" type="string">right_bell</property>
+  </node>
+  <node id="12" id.type="int">
+    <property name="type" type="string">right_bell</property>
+  </node>
+  <node id="13" id.type="int">
+    <property name="type" type="string">right_bell</property>
+  </node>
+  <link>
+    <from type="int">0</from>
+    <to type="int">5</to>
+    <property name="delay" type="int">2</property>
+    <property name="capacity" type="int">1</property>
+    <property name="type" type="string">left_bell</property>
+    <property name="weight" type="float">40.0</property>
+    <property name="buffer" type="int">1653846</property>
+  </link>
+  <link>
+    <from type="int">1</from>
+    <to type="int">5</to>
+    <property name="delay" type="int">2</property>
+    <property name="capacity" type="int">1</property>
+    <property name="type" type="string">left_bell</property>
+    <property name="weight" type="float">40.0</property>
+    <property name="buffer" type="int">1653846</property>
+  </link>
+  <link>
+    <from type="int">2</from>
+    <to type="int">5</to>
+    <property name="delay" type="int">2</property>
+    <property name="capacity" type="int">1</property>
+    <property name="type" type="string">left_bell</property>
+    <property name="weight" type="float">40.0</property>
+    <property name="buffer" type="int">1653846</property>
+  </link>
+  <link>
+    <from type="int">3</from>
+    <to type="int">5</to>
+    <property name="delay" type="int">2</property>
+    <property name="capacity" type="int">1</property>
+    <property name="type" type="string">left_bell</property>
+    <property name="weight" type="float">40.0</property>
+    <property name="buffer" type="int">1653846</property>
+  </link>
+  <link>
+    <from type="int">4</from>
+    <to type="int">5</to>
+    <property name="delay" type="int">2</property>
+    <property name="capacity" type="int">1</property>
+    <property name="type" type="string">left_bell</property>
+    <property name="weight" type="float">40.0</property>
+    <property name="buffer" type="int">1653846</property>
+  </link>
+  <link>
+    <from type="int">5</from>
+    <to type="int">6</to>
+    <property name="delay" type="int">2</property>
+    <property name="capacity" type="int">40</property>
+    <property name="type" type="string">core</property>
+    <property name="weight" type="float">1.0</property>
+    <property name="buffer" type="int">81666666</property>
+  </link>
+  <link>
+    <from type="int">6</from>
+    <to type="int">7</to>
+    <property name="delay" type="int">2</property>
+    <property name="capacity" type="int">40</property>
+    <property name="type" type="string">core</property>
+    <property name="weight" type="float">1.0</property>
+    <property name="buffer" type="int">82857142</property>
+  </link>
+  <link>
+    <from type="int">7</from>
+    <to type="int">8</to>
+    <property name="delay" type="int">2</property>
+    <property name="capacity" type="int">40</property>
+    <property name="type" type="string">core</property>
+    <property name="weight" type="float">1.0</property>
+    <property name="buffer" type="int">81666666</property>
+  </link>
+  <link>
+    <from type="int">8</from>
+    <to type="int">9</to>
+    <property name="delay" type="int">2</property>
+    <property name="capacity" type="int">1</property>
+    <property name="type" type="string">right_bell</property>
+    <property name="weight" type="float">40.0</property>
+    <property name="buffer" type="int">1653846</property>
+  </link>
+  <link>
+    <from type="int">8</from>
+    <to type="int">10</to>
+    <property name="delay" type="int">2</property>
+    <property name="capacity" type="int">1</property>
+    <property name="type" type="string">right_bell</property>
+    <property name="weight" type="float">40.0</property>
+    <property name="buffer" type="int">1653846</property>
+  </link>
+  <link>
+    <from type="int">8</from>
+    <to type="int">11</to>
+    <property name="delay" type="int">2</property>
+    <property name="capacity" type="int">1</property>
+    <property name="type" type="string">right_bell</property>
+    <property name="weight" type="float">40.0</property>
+    <property name="buffer" type="int">1653846</property>
+  </link>
+  <link>
+    <from type="int">8</from>
+    <to type="int">12</to>
+    <property name="delay" type="int">2</property>
+    <property name="capacity" type="int">1</property>
+    <property name="type" type="string">right_bell</property>
+    <property name="weight" type="float">40.0</property>
+    <property name="buffer" type="int">1653846</property>
+  </link>
+  <link>
+    <from type="int">8</from>
+    <to type="int">13</to>
+    <property name="delay" type="int">2</property>
+    <property name="capacity" type="int">1</property>
+    <property name="type" type="string">right_bell</property>
+    <property name="weight" type="float">40.0</property>
+    <property name="buffer" type="int">1653846</property>
+  </link>
+</topology>
